@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #cfcfcf;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    font-family: NS Sans,Segoe UI,Myriad,Verdana,sans-serif;
+    height: 100vh;
+    margin: auto;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    position: relative;
+    margin: 1em;
+    color: #003082;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: .625rem;
+    color: #003082;
+}
+
+#title {
+    margin-left: 15em;
+    padding-top: 1em;
+}
+
+/* topbar menu */
+header {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.topbar-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+}
+.nav-menu-item {
+    display: flex;
+    margin: 0.6em 0.4em 0.4em 0.3em;
+}
+/* topbar categories */
+.topbar-cat {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.nav-cat {
+    display: flex;
+}
+
+.nav-cat-item {
+    display: flex;
+    margin: 0.6em 0.4em 0.4em 0.3em;
+}
+
+/* header-image */
+.header-image {
+    background: rgb(44, 128, 143);    
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+}
+
+/* call-to-action container */
+.call-to-action {
+    background: #cfcfcf;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 21vh; 
+}
+/* call-to-action item */
+.trip-box {
+    background: rgb(231, 179, 9);
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 67%;
+    height: 230px;
+    bottom: 310px;
+    position: absolute;
+}
+
+/* top-section container */
+.top-section {
+    background: #cfcfcf;
+    display: flex;
+    justify-content: space-between;
+    width: 67%;
+    height: 35vh;
+    margin: auto;
+}
+/* top-section items */
+.product-box {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 31%;
+}
+.customercare-box {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 31%;
+}
+.extra-box {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 31%;
+}
+
+/* middle-section container */
+.middle-section {
+    background: #cfcfcf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 67%;
+    height: 117vh;
+    margin: auto;
+}
+
+/* middle-section items */
+.box-1 {
+    background: rgb(134, 59, 59);
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 44vw;
+    height: 35vh;
+}
+.box-2 {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 20.6vw;
+    height: 35vh;
+}
+.box-3 {
+    background: rgb(73, 73, 139);
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 20.6vw;
+    height: 35vh;
+}
+.box-4 {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 20.9vw;
+    height: 35vh;
+}
+.box-5 {
+    background: rgb(235, 151, 151);
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 20.6vw;
+    height: 35vh;
+}
+.box-6 {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    border-left: solid #0142b1 6px;
+    width: 20.6vw;
+    height: 35vh;
+}
+
+/* bottom-section container */
+.bottom-section {
+    background: #cfcfcf;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 67%;
+    height: 45vh;
+    margin: auto;
+}
+
+/* bottom-section items */
+.large-box {
+    background: #00b7ff;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 44vw;
+}
+.small-box {
+    background: whitesmoke;
+    border-bottom: solid rgb(173, 173, 173) 3px;
+    width: 20.6vw;
+}
+
+/* footer section */
+footer {
+    background: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+}
+
+.bottom-bar {
+    background: whitesmoke;
+    color: rgb(0, 114, 221);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 68%;
+    height: 35vh;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.go-to-nav {
+    display: flex;
+    
+}
+.product-nav {
+    display: flex;
+    
+}
+.about-us-nav {
+    display: flex;
+    
+}
+.social-nav {
+    display: flex;
+    
+}
+
+#nav-item {
+    list-style: none;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+#social-item {
+    list-style: none;
+    margin-top: 1em;
+}
