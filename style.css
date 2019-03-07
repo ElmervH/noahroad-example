@@ -31,7 +31,7 @@ h2 {
     color: #003082;
 }
 
-#title {
+.title {
     margin-left: 15em;
     padding-top: 1em;
 }
@@ -244,12 +244,12 @@ footer {
     
 }
 
-#nav-item {
+.nav-item {
     list-style: none;
     font-weight: lighter;
     margin-top: 1em;
 }
-#social-item {
+.social-item {
     list-style: none;
     margin-top: 1em;
 }
