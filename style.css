@@ -6,7 +6,6 @@ body {
     background: #cfcfcf;
     display: flex;
     color: #003082;
-    flex: 1 1 auto;
     flex-flow: column;
     font-family: NS Sans,Segoe UI,Myriad,Verdana,sans-serif;
     height: 100vh;
@@ -40,24 +39,39 @@ h2 {
 header {
     background: whitesmoke;
     border-bottom: solid rgb(173, 173, 173) 3px;
-    display: flex;
     position: fixed;
     z-index: 1;
     width: 100%;
 }
 
-.ns-logo {
-    margin: auto;
-    width: 60px;
-    position: relative;
-    left: 330px;
-    top: 6px;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    width: 67%; 
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+
 }
 
+.ns-logo {
+    width: 3rem;
+    height: auto;
+}
+
+
 .topbar-menu {
+    flex: 1 1 auto;
     display: flex;
-    width: 100%;
-    justify-content: center;
+}
+.topbar-cat {
+    display: flex;
 }
 
 .nav-menu {
@@ -68,11 +82,7 @@ header {
     margin: 0.6em 0.4em 0.4em 0.3em;
 }
 /* topbar categories */
-.topbar-cat {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
+
 .nav-cat {
     display: flex;
 }
@@ -114,24 +124,22 @@ header {
     display: flex;
     justify-content: space-between;
     width: 67%;
-    height: 35vh;
     margin: auto;
+    flex-flow: row wrap;
 }
 /* top-section items */
 .product-box {
+
     background: whitesmoke;
     border-bottom: solid rgb(173, 173, 173) 3px;
-    width: 31%;
 }
 .customercare-box {
     background: whitesmoke;
     border-bottom: solid rgb(173, 173, 173) 3px;
-    width: 31%;
 }
 .extra-box {
     background: whitesmoke;
     border-bottom: solid rgb(173, 173, 173) 3px;
-    width: 31%;
 }
 
 /* middle-section container */
@@ -229,19 +237,15 @@ footer {
 
 .go-to-nav {
     display: flex;
-    
 }
 .product-nav {
     display: flex;
-    
 }
 .about-us-nav {
-    display: flex;
-    
+    display: flex; 
 }
 .social-nav {
-    display: flex;
-    
+    display: flex; 
 }
 
 .nav-item {
@@ -252,4 +256,16 @@ footer {
 .social-item {
     list-style: none;
     margin-top: 1em;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width: 769px) {
+    .topbar-cat {
+        display: none;
+    }
+   
 }
